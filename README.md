@@ -27,9 +27,24 @@ Usage: cli [options ...]
     -I, --in6       Show your internal Ip address in IPv6 version
 ```
 
+## API
+
+You can also use the API as a module with : 
+
+```
+var easyIP = require('easy-ip')
+
+var ip = new easyIP()
+
+ip.getPubIp().then((data) => {
+    console.log(data)
+})
+```
+
+
 ## Tests
 
-Few tests are available by typing : 
+Few tests are available with mocha Framework by typing : 
 
 ```
 npm test
