@@ -27,6 +27,26 @@ Usage: cli [options ...]
     -I, --in6       Show your internal Ip address in IPv6 version
 ```
 
+## Example
+
+Input :
+
+```
+easyip -P
+```
+
+Output : 
+```
+Requested at : 18:31:01, 01-05-2017
+Your Public Ip Address : 77.154.100.91
+Localisation : Europe, France
+Deep-Address : 92 Place Achille Peretti, 92200, Neuilly-sur-Seine, Hauts-de-Seine, Île-de-France
+   Latitude : 48.88460
+   Longitude : 2.26970
+------------------
+```
+
+
 ## API
 
 Each method return a Promise with data.
