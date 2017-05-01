@@ -29,6 +29,7 @@ Usage: cli [options ...]
 
 ## API
 
+Each method return a Promise with data.
 You can also use the API as a module with : 
 
 ```
@@ -36,11 +37,10 @@ var easyIP = require('easy-ip')
 
 var ip = new easyIP()
 
-ip.getPubIp().then((data) => {
+ip.getPubIp().then(data => {
     console.log(data)
 })
 ```
-
 
 ## Tests
 
