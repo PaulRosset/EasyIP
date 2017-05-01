@@ -1,0 +1,40 @@
+{
+  "name": "easy-ip",
+  "version": "1.0.0",
+  "description": "A simple CLI tool to show your own public ip with few features in more",
+  "main": "api/index.js",
+  "bin": {
+    "easyip": "./cli.js"
+  },
+  "scripts": {
+    "test": "mocha ./Test/index.js --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulRosset/EasyIP.git"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "cli",
+    "ip"
+  ],
+  "author": "Paul Rosset <paulrosset96@gmail.com> (http://paulrosset.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PaulRosset/EasyIP/issues"
+  },
+  "homepage": "https://github.com/PaulRosset/EasyIP#readme",
+  "devDependencies": {
+    "chalk": "1.1.3",
+    "commander": "2.9.0",
+    "expect.js": "0.3.1",
+    "lodash": "4.17.4",
+    "mocha": "3.3.0",
+    "moment": "2.18.1",
+    "superagent": "3.5.2"
+  },
+  "dependencies": {
+    "superagent": "3.5.2"
+  }
+}
