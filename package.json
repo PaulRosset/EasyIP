@@ -1,7 +1,7 @@
 {
   "name": "easy-ip",
   "version": "1.0.0",
-  "description": "A simple CLI tool to show your own public ip with few features in more",
+  "description": "CLI tool to get your Public/Internal Address IP easily and quickly with few features in more.",
   "main": "api/index.js",
   "bin": {
     "easyip": "./cli.js"
