@@ -1,7 +1,7 @@
 # EasyIP !
 
-[Version Tag](https://img.shields.io/github/tag/PaulRosset/EasyIP.svg)
-[Latest Version released](https://img.shields.io/github/release/PaulRosset/EasyIP.svg)
+![Version Tag](https://img.shields.io/github/tag/PaulRosset/EasyIP.svg)
+![Latest Version released](https://img.shields.io/github/release/PaulRosset/EasyIP.svg)
 
 CLI tool to get your Public/Internal Address IP easily and quickly with few features in more.
 
