@@ -65,14 +65,6 @@ ip.getPubIp().then(data => {
 })
 ```
 
-## Tests
-
-Few tests are available with mocha Framework by typing : 
-
-```
-npm test
-```
-
 ## License
 
 MIT License
