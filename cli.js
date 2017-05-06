@@ -10,7 +10,7 @@ let split = chalk.bold.yellow
 let data = new ipAddress()
 
 program
-    .version('1.0.0')
+    .version('1.0.3')
     .usage('[options ...]')
     .option('-p, --pub', 'Show your Public Ip address (IPv4)')
     .option('-P, --pubLocal', 'Show your Public Ip address (IPv4) with your location depending the Ip address')
