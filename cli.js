@@ -19,8 +19,8 @@ program
     .parse(process.argv);
 
 let argc = program.parse(process.argv)
-if (argc.rawArgs.length === 1 || argc.rawArgs.length > 4) {
-    console.log(error('  \n  Error in argument'))
+if (argc.rawArgs.length === 2 || argc.rawArgs.length > 4) {
+    console.log(error('  \n  Provide good argument'))
     program.outputHelp()
 }
 
