@@ -10,43 +10,15 @@ class ipAddress {
         this.date = moment().format("HH:mm:ss, DD-MM-YYYY")
     }
 
-    getPubIp() {
+    getGeobyMyPubIp(pubIp = '') {
         return new Promise((resolve, reject) => {
                 agent
-                .get('https://api.ipify.org?format=json')
+                .get(pubIp ? `https://ipinfo.io/${pubIp}/json` : `https://ipinfo.io/json`)
                 .end((err, res) => {
-                    if (err) reject(err)
+                    if (err || res.body.bogon) reject('Error : Impossible to fetch data. It may your ip address is invalid.')
                     resolve(_.merge(res.body, {"date": this.date}))
-                });
-        })
-    }
-
-    setGeo(lat, long) {
-        return new Promise((resolve, reject) => {
-                agent
-                .get(`http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/reverseGeocode?location=${long}%2C+${lat}&distance=200&f=pjson`)
-                .end((err, res) => {
-                    if (err) reject(err)
-                    resolve(res.text)
                 })
             })
-    }
-
-    getGeobyPubIp() {
-        return new Promise((resolve, reject) => {
-                this.getPubIp().then((dataIp) => {
-                agent
-                .get(`https://ipvigilante.com/${dataIp.ip}`)
-                .end((err, res) => {
-                    if (err) reject(err)
-                    this.setGeo(res.body.data.latitude, res.body.data.longitude).then((data) => {
-                        resolve(_.merge(res.body, {"date": this.date}, JSON.parse(data)))
-                    })
-                })
-            }).catch((failed) => {
-                if (failed) console.log(failed)
-            })
-        })
     }
 
     getLocalIp(version = 'IPv4') {

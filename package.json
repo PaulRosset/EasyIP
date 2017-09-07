@@ -1,6 +1,6 @@
 {
   "name": "easy-ip",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "CLI tool to get your Public/Internal Address IP easily and quickly with few features in more.",
   "main": "api/index.js",
   "bin": {
@@ -26,20 +26,13 @@
   },
   "homepage": "https://github.com/PaulRosset/EasyIP#readme",
   "devDependencies": {
-    "chalk": "1.1.3",
-    "commander": "2.9.0",
     "expect.js": "0.3.1",
-    "lodash": "4.17.4",
-    "mocha": "3.3.0",
-    "moment": "2.18.1",
-    "superagent": "3.5.2"
+    "mocha": "3.3.0"
   },
   "dependencies": {
     "chalk": "1.1.3",
     "commander": "2.9.0",
-    "expect.js": "0.3.1",
     "lodash": "4.17.4",
-    "mocha": "3.3.0",
     "moment": "2.18.1",
     "superagent": "3.5.2"
   }
