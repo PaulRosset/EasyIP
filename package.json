@@ -7,8 +7,6 @@
     "easyip": "./cli.js"
   },
   "scripts": {
-    "check": "npm install && npm outdated",
-    "update": "ncu -u && npm update && npm install",
     "test": "mocha ./Test/index.js --timeout 10000"
   },
   "repository": {
@@ -29,7 +27,6 @@
   "homepage": "https://github.com/PaulRosset/EasyIP#readme",
   "devDependencies": {
     "expect.js": "0.3.1",
-    "npm-check-updates": "^12.1.0",
     "mocha": "9.1.3"
   },
   "dependencies": {
